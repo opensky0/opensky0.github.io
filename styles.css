@@ -1,13 +1,33 @@
+@import url(catppuccin.css);
+
 body {
-    background-color: #222222;
+    background-color: var(--ctp-mocha-base);
 }
 
 p {
-    color: white;
+    color: var(--ctp-mocha-text);
     font-family: "Roboto Mono", sans-serif;
 }
 
 h1 {
-    color: white;
+    color: var(--ctp-mocha-text);
     font-family: "Roboto Mono", sans-serif;
+}
+
+a {
+    color: var(--ctp-mocha-mauve);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-shadow: 0 0 3px var(--ctp-mocha-mauve);
+}
+
+a:visited {
+    color: var(--ctp-mocha-blue)
+}
+
+a:visited:hover {
+    text-shadow: 0 0 3px var(--ctp-mocha-blue);
 }
